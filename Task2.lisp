@@ -1,5 +1,5 @@
 ;;вывести на печать все строки файла
-(defun print (path)
+(defun i (path)
     (let ((in (open path :if-does-not-exist nil)))
         (when in
             (loop for line = (read-line in nil)
@@ -9,4 +9,4 @@
      )
 )
 
-(print "test.txt")
+(i "test.txt")
